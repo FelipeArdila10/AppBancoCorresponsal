@@ -9,13 +9,30 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BancoPrueba">
-        <activity android:name=".ConsultarSaldoActivity"></activity>
-        <activity android:name=".RetiroActivity" />
-        <activity android:name=".RegisterNewBankActivity" />
-        <activity android:name=".MenuActivity" />
-        <activity android:name=".RegistroActivity" />
         <activity
-            android:name=".LoginActivity"
+            android:name="com.example.view.PersonalData"
+            android:exported="true" />
+        <activity
+            android:name="com.example.view.AccountActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.view.MenuActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.view.HistorialActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.view.HistorialTransaccionesActivity"
+            android:exported="true" />
+        <activity android:name="com.example.view.VoucherActivity" />
+        <activity android:name="com.example.view.DepositoActivity" />
+        <activity android:name="com.example.view.ConsultarSaldoActivity" />
+        <activity android:name="com.example.view.RetiroActivity" />
+        <activity android:name="com.example.view.RegisterNewBankActivity" />
+        <activity android:name="com.example.view.MainActivity" />
+        <activity android:name="com.example.view.RegistroActivity" />
+        <activity
+            android:name="com.example.view.LoginActivity"
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

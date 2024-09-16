@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F2F2"
+    android:orientation="vertical"
+    tools:context="com.example.view.VoucherActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvNomCoop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Voucher"
+            android:textAppearance="?attr/textAppearanceHeadline5" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/tvNomCoop"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:background="#270949" />
+
+        <TextView
+            android:id="@+id/textViewRecibo"
+            android:layout_width="356dp"
+            android:layout_height="434dp"
+            android:layout_above="@+id/btnEnviarWhatsapp"
+            android:layout_below="@id/view"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="72dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="35dp"
+            android:background="#FFFFFF"
+            android:text="Hola esto es una prueba\nPrueba de Saldo de linea"
+            android:textAlignment="center"
+            android:textAppearance="?attr/textAppearanceBody1"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="138dp"
+            android:layout_height="60dp"
+            android:layout_alignStart="@+id/textViewRecibo"
+            android:layout_alignEnd="@+id/view"
+            android:layout_alignBottom="@+id/textViewRecibo"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="106dp"
+            android:layout_marginEnd="86dp"
+            android:layout_marginBottom="-24dp"
+            android:foregroundGravity="center"
+            app:srcCompat="@drawable/comprobado" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnEnviarWhatsapp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="15dp"
+            android:drawableEnd="@drawable/ic_baseline_send_24"
+            android:drawableTint="@color/white"
+            android:text="Enviar por Whatsapp"
+            android:textColor="@color/white"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSalir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="25dp"
+            android:text="salir"
+            android:textColor="@color/white" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
